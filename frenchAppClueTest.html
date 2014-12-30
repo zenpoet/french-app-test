@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>French App Clue Test</title>
+    
+<!-- Javascript -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<!--Audio Player-->
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+  
+<!-- Stylesheet -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
+    
+<script language="JavaScript">
+
+
+var password;
+
+var key1="1789";
+
+password=prompt('Please enter the key to access this page!');
+
+if (password==key1)
+  alert('Key Correct! Click OK to enter!');
+else
+   {
+    window.location="frenchAppClueFail.html";
+    }
+
+</script>
+    
+  </head>
+  <!--mobile page content -->
+
+<body>
+ <!--mobile page header content -->
+ <div data-role="page">
+  <div data-role="header" data-theme="a">
+   <h1>Congratulations</h1>
+   </div>
+   <div data-role="content" data-theme="a">
+   <table border="0" cellpadding="20" background="http://www.nickandnelly.co.za/wp-content/uploads/2012/01/biblioteka.jpg" 
+ width="100%" style="color:white">
+<tr height="10%">
+<td align="right" colspan="3">
+<img src=images/soundOn.png>
+</td>
+</tr>
+<tr>
+  <td width="10%"></td>
+
+  <td style="opacity:0.8" bgcolor="#" width="80%">
+  <p><b>Marie:</b> Yeah! We cracked the code!</p>
+
+	<p><b>Jacques:</b> Ouvre la boîte! Ouvre la boîte! OPEN THE BOX ALREADY!</p>
+  
+   <p><b>Josephine’s voice:</b> Cher Joe, you are the chosen one! Félicitations! Congratulations!
+
+Remember that 1789 is the magic number. You have 17 days to interview 8 chefs 
+
+and find my 9 secret recipes. After that it will be too late. Hurry, once you complete 
+
+this task, you will receive my treasure. Bonne chance!</p>
+     
+</td>
+  <td width="10%"></td>
+</tr>
+<tr height="10%">
+<td colspan="3">
+
+</td>
+</tr>
+</table>
+<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Visit Restaurants</a>
+<a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+</div>
+  </body>
+</html>
+
+
