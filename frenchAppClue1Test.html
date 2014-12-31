@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>French App Clue Test</title>
+    <title>French App First Clue</title>
     
 <!-- Javascript -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -24,10 +24,10 @@ var key1="1789";
 password=prompt('Please enter the key to access this page!');
 
 if (password==key1)
-  alert('Key Correct! Click OK to enter!');
+  alert('Clue Correct! Click OK to enter!');
 else
    {
-    window.location="frenchAppClueFail.html";
+    window.location="frenchAppPage1.html";
     }
 
 </script>
@@ -39,6 +39,7 @@ else
  <!--mobile page header content -->
  <div data-role="page">
   <div data-role="header" data-theme="a">
+  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
    <h1>Congratulations</h1>
    </div>
    <div data-role="content" data-theme="a">
@@ -46,24 +47,14 @@ else
  width="100%" style="color:white">
 <tr height="10%">
 <td align="right" colspan="3">
-<img src=images/soundOn.png>
+<a href="#" onclick='play_audio("sounds/soundpage4.mp3")'><img src="images/soundOn.png"></a>
 </td>
 </tr>
 <tr>
   <td width="10%"></td>
 
   <td style="opacity:0.8" bgcolor="#" width="80%">
-  <p><b>Marie:</b> Yeah! We cracked the code!</p>
-
-	<p><b>Jacques:</b> Ouvre la boîte! Ouvre la boîte! OPEN THE BOX ALREADY!</p>
-  
-   <p><b>Josephine’s voice:</b> Cher Joe, you are the chosen one! Félicitations! Congratulations!
-
-Remember that 1789 is the magic number. You have 17 days to interview 8 chefs 
-
-and find my 9 secret recipes. After that it will be too late. Hurry, once you complete 
-
-this task, you will receive my treasure. Bonne chance!</p>
+  <p><i>First clue</i></p>
      
 </td>
   <td width="10%"></td>
@@ -74,8 +65,9 @@ this task, you will receive my treasure. Bonne chance!</p>
 </td>
 </tr>
 </table>
-<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Visit Restaurants</a>
-<a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+<div data-role="footer" data-theme="a">
+<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Visit Chefs</a>
+</div>
 </div>
   </body>
 </html>
