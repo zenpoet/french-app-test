@@ -14,6 +14,16 @@
   
 <!-- Stylesheet -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
+	
+<!-- enable swipe to change pages -->    
+
+<script>
+$(document).on("pagecreate","#storypage",function(){
+  $("p").on("swipeleft",function(){
+   window.open ('frenchAppPage1.html','_self',false)
+  });                       
+});
+</script>
     
   </head>
   
@@ -31,7 +41,7 @@
  
  <body>
 <!--mobile page header content -->
- <div data-role="page">
+ <div data-role="page" id="storypage">
   <div data-role="header" data-theme="a">
    <h1>Inheritance</h1>
    </div>

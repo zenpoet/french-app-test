@@ -19,31 +19,16 @@
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <script type="text/javascript" src="js/audio.js"></script>
     
-<!-- turn link colors off to hide clue -->
+<!-- hide clue in link -->
 <style>
 
-a {
+a.clue {
     text-decoration: none !important;
     color: #FFFFFF !important;
+    font-weight: normal !important;
 }
 
 </style>
-
-<!-- Swipe Detection to hide clues -->    
-<script>
-$(document).on("pagecreate","#chefpage",function(){
-  $("li").on("swipeleft",function(){
-    alert("You swiped left!");
-  });                       
-});
-</script>
-<script>
-$(document).on("pagecreate","#chefpage",function(){
-  $("p").on("swiperight",function(){
-    alert("You swiped right!");
-  });                       
-});
-</script>
 
   </head>
  
@@ -116,7 +101,7 @@ $(document).on("pagecreate","#chefpage",function(){
     	<h3>Ingredients</h3>
     	<ul>
 <!-- clue hidden here -->
-   		 <li><a href="#clue1" data-rel="popup" data-transition="pop">24 Chinese mystery snails, rinsed well</a></li>
+   		 <li><a href="#clue1" class="clue" data-rel="popup" data-transition="pop">24 Chinese mystery snails, rinsed well</a></li>
    		 <div data-role="popup" id="clue1">
 		<p>This will be the clue for this recipe.</p>
 		</div>
