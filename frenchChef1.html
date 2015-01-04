@@ -18,11 +18,21 @@
 <!--Audio Player-->
     <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
     <script type="text/javascript" src="js/audio.js"></script>
+    
+<!-- turn link colors off to hide clue -->
+<style>
+
+a {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+</style>
 
 <!-- Swipe Detection to hide clues -->    
 <script>
 $(document).on("pagecreate","#chefpage",function(){
-  $("p").on("swipeleft",function(){
+  $("li").on("swipeleft",function(){
     alert("You swiped left!");
   });                       
 });
@@ -44,6 +54,7 @@ $(document).on("pagecreate","#chefpage",function(){
   <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
    <h1>Chef Interview</h1>
    </div>
+ 
   
 <!--audio-->
 <div id="funky-music" class="jp-jplayer"></div> 
@@ -103,26 +114,29 @@ $(document).on("pagecreate","#chefpage",function(){
       <td valign=top width="80%"><h2>Snails with Garlic and Parsley Butter</h2>
       <h3>Serves: 4</h3>
     	<h3>Ingredients</h3>
-   		 <p> 24 Chinese mystery snails, rinsed well<br>
-   		 4 cloves garlic, chopped fine<br>
-   		 1 tablespoon roasted garlic puree<br>
-   		 4 tablespoons butter<br>
-   		 1 tablespoon chopped parsley<br>
-   		 1 tablespoon water</p></td>
+    	<ul>
+<!-- clue hidden here -->
+   		 <li><a href="#clue1" data-rel="popup" data-transition="pop">24 Chinese mystery snails, rinsed well</a></li>
+   		 <div data-role="popup" id="clue1">
+		<p>This will be the clue for this recipe.</p>
+		</div>
+   		 <li>4 cloves garlic, chopped fine</li>
+   		 <li>1 tablespoon roasted garlic puree</li>
+   		 <li>4 tablespoons butter</li>
+   		 <li>1 tablespoon chopped parsley</li>
+   		 <li>1 tablespoon water</li>
+   		 </ul></td>
    		   <td><img src="images/recipe1.jpg" width="200"></td>
        </tr>
       
       <tr>
       <td colspan="2">
   		  <h3>Directions</h3>
-  		   <div data-role="main" class="ui-content">
-  		  <p style="border:1px solid black;margin:5px;">Melt half the butter in medium saucepan. Add the snails and the chopped garlic and 
+  		  <p>Melt half the butter in medium saucepan. Add the snails and the chopped garlic and 
   		  stir over medium heat for three minutes. Do not let the garlic brown. Add the roasted 
   		  garlic puree, water, and remainder of the butter over low heat and gently whisk so that 
   		  the butter is emulsified. Season with salt and pepper, add the chopped parsley and serve
      	  with grilled bread.</p>
-
-  </div>
      	  </td>
      	  </tr>
      	  </table>
@@ -130,6 +144,10 @@ $(document).on("pagecreate","#chefpage",function(){
  </div>
  <div data-role="footer" data-theme="a">
 <a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Return to Chefs</a>
+ <a href="#hint" data-rel="popup" data-role="button" data-transition="pop">Hint</a>
+<div data-role="popup" id="hint">
+<p>It's a "mystery".</p>
+</div>
 <a href="frenchAppFinalClue.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" >All Recipes Collected</a>
 </div>
 </div>   

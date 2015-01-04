@@ -21,12 +21,13 @@ var password;
 
 var key2="temp";
 
-password=prompt('Please enter the key to access this page!');
+password=prompt('Please enter the clue to access this page!');
 
 if (password==key2)
   alert('Clue Correct! Click OK to enter!');
 else
    {
+    alert('That clue is incorrect. Try again.');
     window.location="frenchAppMap.html";
     }
 
@@ -54,7 +55,9 @@ else
   <td width="10%"></td>
 
   <td style="opacity:0.8" bgcolor="#" width="80%">
-  <p><i>Page 7</i></p>
+  <p><i>Page 7</i><br><br>
+  End of story
+</p>
      
 </td>
   <td width="10%"></td>
