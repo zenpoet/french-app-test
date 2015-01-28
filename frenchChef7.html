@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Aromas Cafe Interview</title>
+    
+<!-- Javascript -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<!--Audio Player-->
+    <script type="text/javascript" src="//techkim.github.io/french-app-testjs/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="//techkim.github.io/french-app-testjs/audio.js"></script>
+  
+<!-- Stylesheet -->
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
+
+    
+<!-- code to hide clue in link -->
+<style>
+
+a.clue {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+}
+
+</style>
+
+  </head>
+ 
+ <body>
+ <!--mobile page header content -->
+  <div data-role="page">
+  <div data-role="header" data-theme="a">
+  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+    
+<!-- UPDATE HEADING -->
+      <h1>Aromas Cafe Interview</h1>
+   </div>
+   
+<!--audio-->
+<div id="funky-music" class="jp-jplayer"></div> 
+<!--mobile page content -->
+<div data-role="content" data-theme="a">
+
+<!-- Chef interview -->
+<!-- UPDATE BACKGROUND IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
+  <table border="0" margin="10" cellpadding="20" width="100%" height="100%" style="color:white; background:url('http://techkim.github.io/french-app-test/images/olivia2.jpg') no-repeat;">
+<tr height="10%">
+<td align="right" colspan="3">
+  <a href="#" onclick='play_audio("http://techkim.github.io/french-app-test/sounds/soundChef1.mp3")'><img src="http://techkim.github.io/french-app-test/images/soundOn.png"></a>
+</td>
+</tr>
+<tr>
+  <td width="10%"></td>
+
+  <td style="opacity:0.8" bgcolor="#" width="80%">
+    
+<!-- ADD INTERVIEW HERE -->
+  
+     <h3>What is your French connection?</h3>
+    <p>Born in Morocco, Raised in France, Canadian citizen and proud American.</p>
+    <h3>Is any of your family in the food services industry?</h3>
+     <p> All my family is in the food services industry. My brother Paul used to have one of the biggest resturants in Monteal. My other Brother moved to South Africa and opened a restaurant called Carbon Café.</p>
+    
+  
+
+ <h3>What is your favorite dish?</h3>
+    <p>Cooking lamb. Braised slowly and could be served different ways over risotto or over couscous. That is my favorite dish
+</p>
+    <p>
+        <h3>How do you recognize a good chef when you are looking for staff?</h3>
+<p>There’s a lot of different ways. The education, the school, the place where he did work, but I always give people the chance to learn. And and give him onions, see how he’s going to cut them.
+  
+</p>
+
+<!-- WHATEVER TEXT IN THE INTERVIEW IS THE CLUE, USE THIS CODE -->
+      <a href="#clue1" class="clue" data-rel="popup" data-transition="pop"> 
+   And make an omelet which means, if you’ve seen the movie 100ft journey, remember when he make her the omelet and she hires him? It’s true in France if you don’t know how to make an omelet they won’t hire you
+</a>
+   		 <div data-role="popup" id="clue1">
+           <p>recipe will be hidden here</p>
+		</div>
+<!-- END CLUE CODE -->    
+    
+    <h3> What is the funniest or wierdest expirence you've ever had with a costumer? </h3>
+    
+    <p> The funniest and wierdest one I will sayw as in France. I used to work for a 4 star hotel and restaurant, high class and very strict. There was one costumer. I still remember her name, she was from a very wealty family and she used to sit down and, so nobody sat near her, pay for the whole row of tables. She even had a poodle and I was assigned to wait on her and feed her dog. I was young, and one day she invited me to some seminar she wanted to give at the hotel and I prefered to go danicng with my friend so I didn't go. The next day I came, she had her cane and she got so upset she hit me on the head with the cane. It's true I still remember this one. SHe hit me one time and I said something like "oh: and she said she was insulted I didn't come to the seminar. I said I was sorry but when I cmae to the table se was still upset and she hit me again with the cane. The directir if the hotel came and he punished me for two weeks. I washed dishes. That is the funniest and wierdest experience. </p>
+<!-- end recipe -->
+    
+  
+     
+     
+</td>
+  <td width="10%"></td>
+</tr>
+<tr height="10%">
+<td colspan="3">
+
+</td>
+</tr>
+</table>
+
+   </div>
+   
+ <div data-role="footer" data-theme="a">
+<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Return to Chefs</a>
+ <a href="#hint" data-rel="popup" data-role="button" data-transition="pop">Hint</a>
+<div data-role="popup" id="hint">
+  
+<!-- PUT YOUR Hint TO FIND RECIPE HERE -->  
+<p>What do you have to cook to be hired in a French restaurant?
+</p>
+</div>
+<a href="frenchAppFinalClue.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" >All Recipes Collected</a>
+</div>
+</div>   
+
+
+  </body>
+</html>
