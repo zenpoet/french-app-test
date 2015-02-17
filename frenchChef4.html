@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>French Food for Kids</title>
+    
+<!-- Javascript -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<!--Audio Player-->
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+  
+<!-- Stylesheet -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
+
+    
+<!-- hide clue in link -->
+<style>
+
+a.clue {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+}
+
+</style>
+
+
+  </head>
+ 
+ <body>
+ <!--mobile page header content -->
+  <div data-role="page">
+  <div data-role="header" data-theme="a">
+  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+      <h1>Chef Interview at Petit Pois Restaurant</h1>
+   </div>
+   
+<!--audio-->
+<div id="funky-music" class="jp-jplayer"></div> 
+<!--mobile page content -->
+<div data-role="content" data-theme="a">
+
+<!-- Chef interview -->
+<!-- UPDATE BACKGROUND IMAGE - MS. WILKENS WILL SHARE URL WITH YOU -->
+<table border="0" margin="10" cellpadding="20" width="100%" height="100%" style="color:white; background:url('images/casey1.jpg') no-repeat;">
+<tr height="10%">
+<td align="right" colspan="3">
+<a href="#" onclick='play_audio("sounds/soundChef1.mp3")'><img src="images/soundOn.png"></a>
+</td>
+</tr>
+<tr>
+  <td width="10%"></td>
+
+  <td style="opacity:0.8" bgcolor="#" width="80%">
+  
+<!-- ADD INTERVIEW HERE -->
+    <h3> Who is your inspiration?</h3>
+    <p>My Inspiration is a man named Chef Beno. Chef Beno was the chef de cuisine at really 
+    fancy restaurant called Persay. His restaurant was rated three michelin stars. I really 
+    admire how he demands respect from all of his staff. He is humble and strict but 
+    everybody still likes and respects him. 
+ </p>
+    <h3> What is the funniest/weirdest experience you have with a customer?</h3>
+    
+    <p>I have had a ton of funny and weird experiences with customers. Once I fell down 
+    the stairs with a plate of spaghetti. I was waitering a ten course restaurant and a 
+    man would put all of his silverware and drinks at the very edge. Eventually, I caught
+     on and placed the silverware at the edge. He would put the the silverware out a 
+     little bit. Another time I was working at a restaurant and I was dared to present a
+      plate of chocolate to two australians in an australian accent. These kinds of 
+      experiences usually happens once a week. 
+</p>
+    <h3>
+Since you are the co owner to both Fleurie and Petit Pois, what are the differences 
+between the two restaurants? </h3>
+    
+    <p>Well, Fleurie is very formal with white table cloths and different glasses for
+     each type of drink. Also, we get the ingredients from different places and the 
+     ingredients for Fleurie are very expensive. Petit pois is less fancy and expensive
+      and a little more rustic looking. Also, Petit Pois is more in touch with the 
+      community. We supported a school that had a garden but didn't have enough money for 
+      food to plant so we bought it for them. 
+</p>
+    <h3>How do you recognize a good chef?</h3>
+<p>A good chef is clean, calm,in control, orderly, open to learning, sometimes a little
+ bossy, and holds high standards with himself and his staff. He/she earns respect and has 
+ an open mind. A good chef is up for learning and to be the best he/she can be.
+ </p>
+</td>
+  <td width="10%"></td>
+</tr>
+<tr height="10%">
+<td colspan="3">
+
+</td>
+</tr>
+</table>
+
+   </div>
+   
+ <div data-role="footer" data-theme="a">
+<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Return to Map</a>
+ <a href="#hint" data-rel="popup" data-role="button" data-transition="pop">Hint</a>
+<div data-role="popup" id="hint">
+
+<!-- PUT YOUR CLUE TO FIND RECIPE HERE -->
+<p>needs a clue</p>
+</div>
+<a href="frenchAppFinalClue.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" >All Recipes Collected</a>
+<a data-role="button" data-theme="a" href="http://www.petitpoisrestaurant.com/" target="_blank">Petit Pois Restaurant</a>
+</div>
+</div>   
+
+
+  </body>
+</html>
