@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>Bashir's Taverna Interview</title>
+    
+<!-- Javascript -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+<!--Audio Player-->
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/audio.js"></script>
+  
+<!-- Stylesheet -->
+	<link rel="stylesheet" href="//code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
+
+    
+<!-- code to hide clue in link -->
+<style>
+
+a.clue {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+}
+
+</style>
+
+  </head>
+ 
+ <body>
+ <!--mobile page header content -->
+  <div data-role="page">
+  <div data-role="header" data-theme="a">
+  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+    
+<!-- UPDATE HEADING -->
+      <h1>Bashir's Taverna Interview</h1>
+   </div>
+   
+<!--audio-->
+<div id="funky-music" class="jp-jplayer"></div> 
+<!--mobile page content -->
+<div data-role="content" data-theme="a">
+
+<!-- Chef interview -->
+<!-- UPDATE BACKGROUND IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
+  <table border="0" margin="10" cellpadding="20" width="100%" height="100%" style="color:white; background:url('images/liza1.jpg')">
+<tr height="10%">
+<td align="right" colspan="3">
+  <a href="#" onclick='play_audio("sounds/soundChef1.mp3")'><img src="images/soundOn.png"></a>
+</td>
+</tr>
+<tr>
+  <td width="10%"></td>
+
+  <td style="opacity:0.8" bgcolor="#" width="80%">
+    
+<!-- ADD INTERVIEW HERE -->
+    <p><b>Liza:</b> Qu'est-ce que vous vouliez être quand vous étiez petit?</p>
+    <p><b>Bashir:</b> Je voulais être un musicien. Je viens d'une famille de musiciens. C’était ma passion. La nourriture et la musique étaient mes passions. </p>
+    <p><b>Tatum:</b> Qui est votre inspiration?</p>
+    <p><b>Bashir:</b> Ma mère, c’est vrai. Sa cuisine est très bonne!</p>
+    <p><b>Liza:</b> Où avez-vous grandi?</p>
+    <p><b>Bashir:</b> J’ai grandi en Algérie.</p>
+    <p><b>Piper:</b> Quel est votre plat favori?</p>
+    <p><b>Bashir:</b> C’est difficile, mais, j’aime le poisson. </p>
+    
+    
+   
+
+<!-- WHATEVER TEXT IN THE INTERVIEW IS THE CLUE, USE THIS CODE -->
+      <a href="#clue1" class="clue" data-rel="popup" data-transition="pop"> 
+  (It's hard, but I like fish)</a>
+   		 <div data-role="popup" id="clue1">
+           <p>recipe will be hidden here</p>
+		</div>
+<!-- END CLUE CODE -->    
+    
+    
+<!-- end recipe -->
+    
+     
+</td>
+  <td width="10%"></td>
+</tr>
+<tr height="10%">
+<td colspan="3">
+
+</td>
+</tr>
+</table>
+
+   </div>
+   
+ <div data-role="footer" data-theme="a">
+<a href="frenchAppMap.html" data-transition="flip" data-role="button" data-theme="a">Return to Chefs</a>
+ <a href="#hint" data-rel="popup" data-role="button" data-transition="pop">Hint</a>
+<div data-role="popup" id="hint">
+  
+<!-- PUT YOUR Hint TO FIND RECIPE HERE -->  
+<p>What this chef's favorite food?</p>
+</div>
+<a href="frenchAppFinalClue.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" >All Recipes Collected</a>
+</div>
+</div>   
+
+
+  </body>
+</html>
