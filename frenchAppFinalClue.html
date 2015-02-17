@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>French App Final Clue</title>
+    <title>French Food for Kids</title>
     
 <!-- Javascript -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -19,20 +19,9 @@
 
 var password;
 
-var key2="temp";
+var key2="le francais)";
 
-password=prompt(Now that you have collected all of the recipes, fill in the blanks to figure out the clue:
-
-Choco_ate Chip Cookie 
-Tart_ aux abricots et frangipane 
-_lourless Chocolate Cake 
-Potato G_atin 
-Coq  _u vin 
-Boeuf Bourguigno_
-_rème brûlée
-Morocc___n Meatballs
-Poulet Gr_llé 
-Butternut Squash _oup );
+password=prompt('Please enter the clue to access this page!');
 
 if (password==key2)
   alert('Clue Correct! Click OK to enter!');
@@ -55,7 +44,7 @@ else
    <h1>Congratulations</h1>
    </div>
    <div data-role="content" data-theme="a">
-   <table border="0" cellpadding="20" background="http://www.nickandnelly.co.za/wp-content/uploads/2012/01/biblioteka.jpg" 
+   <table border="0" cellpadding="20" background="images/hannah2.jpg" 
  width="100%" style="color:white">
 <tr height="10%">
 <td align="right" colspan="3">
@@ -66,9 +55,21 @@ else
   <td width="10%"></td>
 
   <td style="opacity:0.8" bgcolor="#" width="80%">
-  <p><i>Page 7</i><br><br>
-  End of story
-</p>
+  <p><b><center>17 days later...</center></b></p>
+    <p>Knock knock knock!</p>
+    <p><b>Joe:</b> <a href="#" onclick='play_audio("sounds/sound1a.mp3")'>Qui est là?</a> Who is there?</p>
+    <p><b>Voice:</b> Alix Cinéma.</p>
+    <p><b>Joe:</b> A movie maker? (opening the door):
+    <a href="#" onclick='play_audio("sounds/sound1a.mp3")'> Oh c’est vous.</a> It’s you. 
+    I thought you were a movie maker, but no, you are just the lawyer who gave me a box 
+    with no money!</p>
+    <p><b>Alix Cinéma:</b> Maybe you will like me more now (showing keys).</p>
+    <p><b>Joe:</b> All right! I am getting a new car!  Europe, here I come!</p>
+    <p><b>Alix Cinéma:</b> You will be going to Europe all right, but you will be running 
+    Great Aunt Josephine’s restaurant.  You will be working 6 days a week, 10 hours/day 
+    and now that you have collected her secret recipes, you will become the next Famous 
+    French chef.  These are the keys to Josephine’s treasure.<a href="#" onclick='play_audio("sounds/sound1a.mp3")'> Félicitations!</a></p>
+    <p><b>Joe:</b> <a href="#" onclick='play_audio("sounds/sound1a.mp3")'>QUOI?  NONNNNNNNNNNNN!</a></p>
      
 </td>
   <td width="10%"></td>
@@ -79,7 +80,9 @@ else
 </td>
 </tr>
 </table>
-
+<div data-role="footer" data-theme="a">
+<a href="frenchAppCredits.html" data-transition="flip" data-role="button" data-theme="a">Credits</a>
+</div>
 </div>
   </body>
 </html>
