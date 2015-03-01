@@ -1,0 +1,9 @@
+.ui-body-a, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.25em;
+}
+
+/* this works */
+.dialogue {
+    font-size: 1.25em;
+}

@@ -14,9 +14,9 @@
   
 <!-- Stylesheet -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
-	
+	<link rel="stylesheet" href="css/2lingua.css">
     
-  </head>
+</head>
  
  <body>
  <!--mobile page header content -->
@@ -33,7 +33,7 @@
 <div data-role="content" data-theme="a">
   
 <!-- UPDATE BACKGROUND IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
- <table border="0" cellpadding="20" background="images/casey3.jpg" 
+ <table class="dialogue" border="0" cellpadding="20" background="images/casey3.jpg"
  width="100%" style="color:white">
 <tr height="10%">
 <td align="right" colspan="3">
@@ -43,11 +43,11 @@
 <tr>
   <td width="10%"></td>
 
-  <td style="opacity:0.8" bgcolor="#" width="80%">
-
+  <td  style="opacity:0.8" bgcolor="#" width="80%">
 <!-- ADD PAGE CONTENT HERE -->
 <!-- FOR EVERY SOUND FILE TO BE PLAYED, INCREMENT THE SOUND FILE NAME, EG. SOUND1A.MP3, SOUND1B.MP3, ETC -->
-    <p><b>Lawyer:</b> <a  href="#" onclick='play_audio("sounds/sound1a.mp3")'> Je suis désolé</a>. I am sorry for your loss. Your great aunt Jo was a wonderful woman. A very generous person, as well as a successful French chef.</p>
+    <p><b>Lawyer:</b>
+    <a href="#" onclick='play_audio("sounds/sound1a.mp3")'>Je suis désolé</a>. I am sorry for your loss. Your great aunt Jo was a wonderful woman. A very generous person, as well as a successful French chef.</p>
     <p><b>Joe:</b> Great aunt Jo????  I thought I was named after my great uncle Joe!</p>
     <p><b>Lawyer: </B> Ha! <a  href="#" onclick='play_audio("sounds/sound1a.mp3")'>Non,</a> You were named after your great aunt Josephine.  At least, that’s what she told me.  She was an amazing lady.</p>
     <p><b>Joe:</b> <a href="#" onclick='play_audio("sounds/sound1b.mp3")'>Merci!</a> Thank you!  But I didn’t know her.</p>
@@ -61,7 +61,7 @@
 </td>
 </tr>
 </table>
-<div data-role="footer" data-theme="a">
+<div data-role="footer" data-theme="a" data-position="fixed">
 
 <a href="frenchAppPage2.html" data-transition="flip" data-role="button" data-theme="a">Next Page</a>
 </div>
