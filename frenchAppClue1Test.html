@@ -1,111 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>French App First Clue</title>
-    <!-- page 5 -->
+    <head>
+        <title>French App First Clue</title>
+        <!-- page 5 -->
+        
+        <!-- Javascript -->
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+        
+        <!--Audio Player-->
+        <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="js/audio.js"></script>
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="js/jquery.mobile-1.3.2.min.css">
+            <link rel="stylesheet" href="css/2lingua.css">
+                
+                <script language="JavaScript">
+                    
+                    var password1;
+                    var key1="1789";
+                    
+                    password1=prompt('Please enter the clue to access this page!');
+                    
+                    if (password1==key1)
+                    alert('Clue Correct! Click OK to enter!');
+                    else
+                    {
+                        alert('That clue is incorrect. Try again.');
+                        window.location="frenchAppPage4.html";
+                    }
+                
+                    </script>
+                
+                </head>
+    <!--mobile page content -->
     
-<!-- Javascript -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
-
-<!--Audio Player-->
-    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/audio.js"></script>
-  
-<!-- Stylesheet -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">  
-    
-<script language="JavaScript">
-
-
-var password1;
-
-var key1="1789";
-
-password1=prompt('Please enter the clue to access this page!');
-
-if (password1==key1)
-  alert('Clue Correct! Click OK to enter!');
-else
-   {
-    alert('That clue is incorrect. Try again.');
-    window.location="frenchAppPage4.html";
-    }
-
-</script>
-    
-  </head>
-  <!--mobile page content -->
-
-<body>
- <!--mobile page header content -->
- <div data-role="page" id="storypage">
-  <div data-role="header" data-theme="a">
-  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
-   <h1>The Chef's Treasure</h1>
-   </div>
-   
-<!--audio-->
-<div id="funky-music" class="jp-jplayer"> </div>
-
-<!--mobile page content -->
-<div data-role="content" data-theme="a">
-  
-<!-- UPDATE BACKGROUND IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
- <table border="0" cellpadding="20" background="images/celia2.jpg" 
- width="100%" style="color:white">
-<tr height="10%">
-<td align="right" colspan="3">
-  <a href="#" onclick='play_audio("sounds/soundpage5.mp3")'><img src="http://techkim.github.io/french-app-test/images/soundOn.png"></a>
-</td>
-</tr>
-<tr>
-  <td width="10%"></td>
-
-  <td style="opacity:0.8" bgcolor="#" width="80%">
-
-<!-- ADD PAGE CONTENT HERE -->
-<!-- FOR EVERY SOUND FILE TO BE PLAYED, INCREMENT THE SOUND FILE NAME, EG. SOUND1A.MP3, SOUND1B.MP3, ETC -->
-    
-    <p><b>Marie:  </b>Yeah! We cracked the code!</p>
-    
-    <p><b>Jacques: </b> <a href="#" onclick='play_audio("sounds/sound5a.mp3")'>
-    Ouvre la boîte! Ouvre la boîte!</a>  OPEN THE BOX ALREADY!</p> 
-    
-    <p><b>Joe: </b> Patience, patience. Before I open, I want to make sure we split everything
-
-equally. 50% for me and 10% for each one of you.</p>
-    
-    <p><b>Marie:  </b><a href="#" onclick='play_audio("sounds/sound5b.mp3")'>Quoi? </a> 
-    How is that equal? And it doesn’t even make it sense. It’s not 100%!</p>
-   
-    
-    <p><b>Joe: </b>Stop being so smart and so precise. 
-    <a href="#" onclick='play_audio("sounds/sound5c.mp3")'>Ma boîte, mes règles.</a> 
-    My box, my rules! Now let’s see how rich I am. (Opening the box)
-     <a href="#" onclick='play_audio("sounds/sound5d.mp3")'>QUOI! RIEN!</a></p>
-    
-    <p><b>Jacques: </b>NADA?</p>
-   
-    <p><b>Marie: </b>NOTHING?</p>
-     
-</td>
-  <td width="10%"></td>
-</tr>
-<tr height="10%">
-<td colspan="3">
-
-</td>
-</tr>
-</table>
-<div data-role="footer" data-theme="a">
-<a href="frenchAppPage4.html" data-transition="flip" data-role="button" data-theme="a">Previous Page</a>
-<a href="frenchAppPage6.html" data-transition="flip" data-role="button" data-theme="a">Next Page</a>
-</div>
-   
-</div>
-</div>
-  </body>
+    <body>
+        <!--mobile page header content -->
+        <div data-role="page" id="storypage">
+            <div data-role="header" data-theme="a">
+                <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+                <h1>The Chef's Treasure</h1>
+            </div>
+            
+            <!--audio-->
+            <div id="funky-music" class="jp-jplayer"> </div>
+            
+            <!--mobile page content -->
+            <div data-role="content" data-theme="a">
+                
+                <!-- UPDATE BACKGROUND IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
+                <table class="dialogue" border="0" cellpadding="20" background="images/celia2.jpg"
+                    width="100%" style="color:white">
+                    <tr height="10%">
+                        <td align="right" colspan="3">
+                            <a href="#" onclick='play_audio("sounds/soundpage5.mp3")'><img src="http://techkim.github.io/french-app-test/images/soundOn.png"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="10%"></td>
+                        
+                        <td style="opacity:0.8" bgcolor="#" width="80%">
+                            
+                            <!-- ADD PAGE CONTENT HERE -->
+                            <!-- FOR EVERY SOUND FILE TO BE PLAYED, INCREMENT THE SOUND FILE NAME, EG. SOUND1A.MP3, SOUND1B.MP3, ETC -->
+                            
+                            <p><b>Marie:  </b>Yeah! We cracked the code!</p>
+                            
+                            <p><b>Jacques: </b> <a href="#" onclick='play_audio("sounds/sound5a.mp3")'>
+                                Ouvre la boîte! Ouvre la boîte!</a>  OPEN THE BOX ALREADY!</p>
+                            
+                            <p><b>Joe: </b> Patience, patience. Before I open, I want to make sure we split everything
+                            
+                            equally. 50% for me and 10% for each one of you.</p>
+                            
+                            <p><b>Marie:  </b><a href="#" onclick='play_audio("sounds/sound5b.mp3")'>Quoi? </a> 
+                            How is that equal? And it doesn’t even make it sense. It’s not 100%!</p>
+                            
+                            
+                            <p><b>Joe: </b>Stop being so smart and so precise. 
+                            <a href="#" onclick='play_audio("sounds/sound5c.mp3")'>Ma boîte, mes règles.</a> 
+                            My box, my rules! Now let’s see how rich I am. (Opening the box)
+                            <a href="#" onclick='play_audio("sounds/sound5d.mp3")'>QUOI! RIEN!</a></p>
+                            
+                            <p><b>Jacques: </b>NADA?</p>
+                            
+                            <p><b>Marie: </b>NOTHING?</p>
+                            
+                        </td>
+                        <td width="10%"></td>
+                    </tr>
+                    <tr height="10%">
+                        <td colspan="3">
+                            
+                        </td>
+                    </tr>
+                </table>
+                <div data-role="footer" data-theme="a" data-position="fixed">
+                    <a href="frenchAppPage4.html" data-transition="flip" data-role="button" data-theme="a">Previous Page</a>
+                    <a href="frenchAppPage6.html" data-transition="flip" data-role="button" data-theme="a">Next Page</a>
+                </div>
+                
+            </div>
+        </div>
+    </body>
 </html>
 
 
