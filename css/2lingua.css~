@@ -3,13 +3,11 @@
     font-size: 1.25em;
 }
 
-/*
-* {
-    font-size: 1em;
-}
-*/
-
 /* this works */
 .dialogue {
-    font-size: 1.25em;
+    font-size: 1.2em;
+}
+
+.footer-nav {
+	text-align: center;
 }
