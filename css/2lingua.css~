@@ -29,7 +29,16 @@
 	height: 150px;
 }
 
-/* attempting to make larger buttons */
-.ui-btn { height: 200px; font-size: 48px; }
+.bgimage {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+    	
+	/* Preserve aspect ratio */
+	min-width: 100%;
+        min-height: 100%;
+	z-index: -1;
+}
 
-
+/* transition animation background color */
+.ui-body-c, .ui-overlay-c { background-color: #222222; }
