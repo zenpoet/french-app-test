@@ -3,15 +3,20 @@
     font-size: 1.25em;
 }
 
+/* transition animation background color */
+.ui-body-c, .ui-overlay-c { background-color: #111111; }
+
 /* this works */
 .dialogue {
     font-size: 1.2em;
 }
 
+/* align footer buttons */
 .footer-nav {
 	text-align: center;
 }
 
+/* home page, boxes for chef picture */
 .super-centered {
 	cellpadding:50;
 	position:relative; 
@@ -22,23 +27,10 @@
 	/*z-index: 2000;*/
 }
 
+/* home page, boxes for chef picture */
 .chef {
 	opacity:0.55;
 	border: 2px solid black;
 	width: 130px;
 	height: 150px;
 }
-
-.bgimage {
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-    	
-	/* Preserve aspect ratio */
-	min-width: 100%;
-        min-height: 100%;
-	z-index: -1;
-}
-
-/* transition animation background color */
-.ui-body-c, .ui-overlay-c { background-color: #222222; }
