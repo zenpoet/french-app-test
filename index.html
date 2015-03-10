@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" >
+	    <meta http-equiv="Pragma" content="no-cache">
                 <title>French Food for Kids</title>
                 
                 <!-- Javascript -->
@@ -16,8 +17,36 @@
                 <!-- Stylesheet -->
                 <link rel="stylesheet" href="js/jquery.mobile-1.3.2.min.css">
                     <link rel="stylesheet" href="css/2lingua.css">
+
+		    <script>
+
+$(document).on('pageinit', '#storypage', function(){       
+	var clue1 = localStorage.getItem("clue1");
+	if (clue1 == "solved") {
+		document.getElementById("map-revealed").style.display ="inline";
+	}
+	else {
+		document.getElementById("map-revealed").style.display ="none";
+	}
+
+	
+	if (localStorage["mariebette_status"] == "solved")
+	{
+		document.getElementById("mariebette-solved").style.display ="block";
+		document.getElementById("mariebette-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("mariebette-solved").style.display ="none";
+		document.getElementById("mariebette-unsolved").style.display ="block";
+	}
+	
+});
+
+</script>
+
                         </head>
-    
+
     <body>
         <!--mobile page header content -->
         <div data-role="page" id="storypage">
@@ -32,7 +61,8 @@
             
             <!--mobile page content -->
             <div data-role="content" data-theme="a" style="color:white; background:url('images/anna5.jpg') no-repeat;">
-                
+
+
                 <table border="0" cellpadding="20" width=100% >
                     <tr height="20px">
                         <td align="center" colspan="3">
@@ -49,6 +79,11 @@
                                 <td width="10%">&nbsp;</td>
                                 <td>
                                     <a href="tutorial.html"><button type="button">start</button></a>
+
+								<div id="map-revealed" style="display:none">
+                                    <a href="frenchAppMap.html"><button type="button">map</button></a>
+									</div>
+
                                 </td>
                             </tr> </table>
                         </td>
@@ -64,30 +99,33 @@
                         <td>
                         </td>
                         <td>
-                            <div data-role="popup" data-theme="a" id="chef-clue" style="z-index: 5000">
+                            <div data-role="popup" data-theme="b" id="chef-clue" style="z-index: 5000">
                                 <p>You must first follow the story<br />and find clues to unlock the chefs' secret recipes</p>
                             </div>
+
                             <table class="super-centered">
                                 <tr>
                                     <td><img style="opacity:1.0" class="chef" src="images/petitpois.png" /></td>
 				    <td><a href="#chef-clue" data-rel="popup"  data-position-to="window" data-inline="true" data-transition="pop"><img class="chef" src="images/icon2.png" /></a></td>
-				    <!-- <a href="#hint" data-rel="popup" data-role="button" data-transition="pop">Hint</a> 
-                     <a href="#popupLogin" data-rel="popup" data-position-to="window" data-role="button" data-inline="true">Form</a>
-
-                     -->
                                     <td><img style="opacity:1.0" class="chef" src="images/ashlyn2.jpg" /></td>
                                 </tr>
                                 <tr>
                                     <td><img style="opacity:1.0" class="chef" src="images/bashir.png" /></td>
-                                    <td><img style="opacity:1.0" class="chef" src="images/jasonpatrick.png" /></td>
+
+                                    <td id="mariebette-solved" style="display:none"><img style="opacity:1.0" class="chef" src="images/jasonpatrick.png"/></td>
+				    <td id="mariebette-unsolved" style="display:none">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="chef" src="images/icon2.png"/></a>
+				    </td>
+
                                     <td><img class="chef" src="images/icon2.png" /></td>
                                 </tr>
                                 <tr>
                                     <td><img class="chef" src="images/icon2.png" /></td>
                                     <td><img class="chef" src="images/icon2.png" /></td>
-                                    <td><img style="opacity:1.0" class="chef" src="images/gerard.png" /></td>
+                                    <td><img class="chef" src="images/icon2.png" /></td>
                                 </tr>
                             </table>
+
                         </td>
                         <tr height="20px">
                             <td align="center" colspan="3">

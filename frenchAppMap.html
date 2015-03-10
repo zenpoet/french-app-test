@@ -13,18 +13,20 @@
          
          <!-- Stylesheet -->
          <link rel="stylesheet" href="js/jquery.mobile-1.3.2.min.css">
-             <link rel="stylesheet" href="css/2lingua.css">
-    
+         <link rel="stylesheet" href="css/2lingua.css">
   </head>
   
 <body>
 <!--mobile page header content -->
- <div data-role="page">
+ <div data-role="page" id="map">
   <div data-role="header" data-theme="a">
    <h1>Restaurant Map</h1>
    </div>
    <!--mobile page content -->
 <div data-role="content" data-theme="a">
+	<script>
+		localStorage["clue1"] = "solved";
+	</script>
 <p>You must visit all the chefs to gather recipes that together will reveal the final clue.</p>
 <img src="images/frenchAppMap.png" width="1024" height="722" alt="" usemap="#imgmap">
 <map id="imgmap" name="imgmap">
@@ -40,7 +42,8 @@
 <!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
 </map>
  <div class="footer-nav" data-role="footer" data-theme="a" data-position="fixed">
-  <a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+  <a href="index.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" rel="external">Home</a>
+  <a href="index4.html" data-transition="flip" data-role="button" data-theme="a" target="_blank" rel="external">Home4</a>
   <a href="#clue2" data-rel="popup" data-transition="pop" data-role="button" data-theme="a"> All Recipes Collected</a>
  <div data-role="popup" id="clue2">
  <p>Now that you have collected all of the recipes, fill in the blanks to figure out the clue:</p>
