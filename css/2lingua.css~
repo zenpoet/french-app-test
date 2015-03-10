@@ -34,3 +34,14 @@
 	width: 130px;
 	height: 150px;
 }
+
+#clue1 {
+	left: 10%;
+	right: 10%;
+	width: 80%;
+}
+
+.recipe-photo {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
