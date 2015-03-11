@@ -54,10 +54,12 @@
 }
 
 .recipe {
-	color: black;
-	font-size: .9em;
-	font-family: sans-serif;
+	color: #111111;
+/*	font-size: .9em; */
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 12px;
 	border-spacing: 50px 10px;
     	-moz-border-radius: 10px;
 	border-radius: 10px;
+	text-shadow: none;
 }
