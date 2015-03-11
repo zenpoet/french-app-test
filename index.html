@@ -29,6 +29,66 @@ $(document).on('pageinit', '#storypage', function(){
 		document.getElementById("map-revealed").style.display ="none";
 	}
 
+	if (localStorage["petitpois_status"] == "solved")
+	{
+		document.getElementById("petitpois-solved").style.display ="block";
+		document.getElementById("petitpois-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("petitpois-solved").style.display ="none";
+	}
+
+	if (localStorage["bashir_status"] == "solved")
+	{
+		document.getElementById("bashir-solved").style.display ="block";
+		document.getElementById("bashir-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("bashir-solved").style.display ="none";
+	}
+
+	if (localStorage["aroma_status"] == "solved")
+	{
+		document.getElementById("aroma-solved").style.display ="block";
+		document.getElementById("aroma-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("aroma-solved").style.display ="none";
+	}
+
+	if (localStorage["paradox_status"] == "solved")
+	{
+		document.getElementById("paradox-solved").style.display ="block";
+		document.getElementById("paradox-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("paradox-solved").style.display ="none";
+	}
+
+	if (localStorage["fleurie_status"] == "solved")
+	{
+		document.getElementById("fleurie-solved").style.display ="block";
+		document.getElementById("fleurie-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("fleurie-solved").style.display ="none";
+	}
+
+	if (localStorage["pomme_status"] == "solved")
+	{
+		document.getElementById("pomme-solved").style.display ="block";
+		document.getElementById("pomme-unsolved").style.display ="none";
+	}
+	else
+	{
+		document.getElementById("pomme-solved").style.display ="none";
+	}
+
 	if (localStorage["ashley_status"] == "solved")
 	{
 		document.getElementById("ashley-solved").style.display ="block";
@@ -122,15 +182,32 @@ $(document).on('pageinit', '#storypage', function(){
 
                             <table class="super-centered">
                                 <tr>
-                                    <td><img class="chef" src="images/petitpois.png" /></td>
-                                    <td><img class="chef" src="images/bashir.png" /></td>
-                                    <td><img class="chef" src="images/aroma.jpg" /></td>
+                                    <td id="petitpois-solved"><img class="chef" src="images/petitpois.png" /></td>
+				    <td id="petitpois-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
+                                    <td id="bashir-solved"><img class="chef" src="images/bashir.png" /></td>
+				    <td id="bashir-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
+                                    <td id="aroma-solved"><img class="chef" src="images/aroma.jpg" /></td>
+				    <td id="aroma-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
                                 </tr>
                                 <tr>
-                                    <td><img class="chef" src="images/jenny.jpg" /></td>
-                                    <td><img class="chef" src="images/fleurie-table.jpg" /></td>
-                                    <td><img class="chef" src="images/gerard.png" /></td>
-
+                                    <td id="paradox-solved"><img class="chef" src="images/jenny.jpg" /></td>
+				    <td id="paradox-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
+                                    <td id="fleurie-solved"><img class="chef" src="images/fleurie-table.jpg" /></td>
+				    <td id="fleurie-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
+                                    <td id="pomme-solved"><img class="chef" src="images/gerard.png" /></td>
+				    <td id="pomme-unsolved">
+					    <a href="#chef-clue" data-rel="popup" data-position-to="window" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
+				    </td>
                                 </tr>
                                 <tr>
                                     <td id="ashley-solved"><img class="chef" src="images/ashley-cover.jpg"/></td>
