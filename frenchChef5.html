@@ -78,6 +78,8 @@ a.clue {
 <p>Flour, water, milk, yeast, salt, sugar, butter, egg wash on top.
 
 <!-- WHATEVER TEXT IN THE INTERVIEW IS THE CLUE, USE THIS CODE -->
+
+<a href="mariebette.recipe.html">CLICK ME HERE</a>
       <a id="mariebette_clue" href="#mariebette_clue_popup" class="clue" data-rel="popup" data-transition="pop"> 
   The process takes a few days, because we ferment the flour overnight, day 2 we make the 
   dough and let it sit overnight, day 3 we make the croissants and day 4 we bake them.</a>
@@ -87,10 +89,15 @@ a.clue {
 		    });
 	    </script>
    		<div data-role="popup" id="mariebette_clue_popup">
+
+			<script>
+			         $('#mariebette_clue_popup').load('mariebette.recipe.html');
+			 </script>
+
+			<!--
             <table border="0" cellpadding="10">
       <tr>
         
-<!-- NAME OF RECIPE -->
       <td valign="top"><h2>Croque Monsieur</h2>
       <h3>Serves: 8</h3>
     	<h3>Ingredients</h3>
@@ -98,7 +105,6 @@ a.clue {
           <tr>
             <td valign="top">
         <ul>
-<!-- UPDATE INGREDIENTS IN ENGLISH -->
 <li>1 pt whole milk</li>
 <li>1 oz flour</li>
 <li>1 oz butter</li>
@@ -112,7 +118,6 @@ a.clue {
             </td>
             <td valign="top">
            <ul>
-<!-- UPDATE INGREDIENTS IN FRENCH-->
 (Needs to be in French)
 <li>1 pt whole milk</li>
 <li>1 oz flour</li>
@@ -129,13 +134,11 @@ a.clue {
         </table>
          </td>
 
-<!-- UPDATE RECIPE IMAGE - SEND MS. WILKENS YOUR IMAGE & SHE WILL SHARE URL WITH YOU -->
         <td><img class="recipe-photo" src="images/chef1.jpg" width="200"></td>
        </tr>
       <tr>
       <td colspan="2">
         
-<!-- UPDATE DIRECTIONS -->
   		  <h3>Directions</h3>
 		  <p>Preheat oven to 425º.
 		  <p>Bring milk to a boil in a saucepan. Reduce heat to low and keep hot.
@@ -152,11 +155,14 @@ two slices of ham and cover ham with two slices of gruyere.
      	  </td>
      	  </tr>
      	  </table>
+-->
+
+<!--
 	  <center>
 	  <a href="#" data-rel="back" data-role="button" data-inline="true" data-theme="a" class="ui-btn-bottom">Close</a> 
 	  </center>
+	  -->
 		</div>
-<!-- end recipe -->
     
     </p>
     <h3>Now what?  What is the future for MarieBette?</h3>
