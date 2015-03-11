@@ -35,6 +35,13 @@
 	opacity:1.0;
 }
 
+.unknown-chef {
+	border: 2px solid black;
+	width: 130px;
+	height: 150px;
+	opacity:0.65;
+}
+
 #clue1 {
 	left: 10%;
 	right: 10%;
