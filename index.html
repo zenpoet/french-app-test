@@ -37,6 +37,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("petitpois-solved").style.display ="none";
+		document.getElementById("petitpois-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["bashir_status"] == "solved")
@@ -47,6 +48,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("bashir-solved").style.display ="none";
+		document.getElementById("bashir-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["aroma_status"] == "solved")
@@ -57,6 +59,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("aroma-solved").style.display ="none";
+		document.getElementById("aroma-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["paradox_status"] == "solved")
@@ -67,6 +70,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("paradox-solved").style.display ="none";
+		document.getElementById("paradox-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["fleurie_status"] == "solved")
@@ -77,6 +81,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("fleurie-solved").style.display ="none";
+		document.getElementById("fleurie-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["pomme_status"] == "solved")
@@ -87,6 +92,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("pomme-solved").style.display ="none";
+		document.getElementById("pomme-unsolved").style.display ="table-cell";
 	}
 
 	if (localStorage["ashley_status"] == "solved")
@@ -97,6 +103,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("ashley-solved").style.display ="none";
+		document.getElementById("ashley-unsolved").style.display ="table-cell";
 	}
 	
 	if (localStorage["mariebette_status"] == "solved")
@@ -107,6 +114,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("mariebette-solved").style.display ="none";
+		document.getElementById("mariebette-unsolved").style.display ="table-cell";
 	}
 	
 	if (localStorage["cvillecoffee_status"] == "solved")
@@ -117,6 +125,7 @@ $(document).on('pageinit', '#storypage', function(){
 	else
 	{
 		document.getElementById("cvillecoffee-solved").style.display ="none";
+		document.getElementById("cvillecoffee-unsolved").style.display ="table-cell";
 	}
 });
 
@@ -212,7 +221,7 @@ $(document).on('pageinit', '#storypage', function(){
 				    </td>
                                 </tr>
                                 <tr>
-                                    <td id="ashley-solved"><img class="chef" src="images/ashley-cover.jpg"/></td>
+					<td id="ashley-solved"><a href="recipe.ashley.html"><img class="chef" src="images/ashley-cover.jpg"/></a></td>
 				    <td id="ashley-unsolved">
 					    <a href="#chef-clue" data-rel="popup" data-position-to="origin" data-inline="true" data-transition="pop"><img class="unknown-chef" src="images/icon2.png"/></a>
 				    </td>
