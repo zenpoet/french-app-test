@@ -22,10 +22,16 @@
 var password2;
 
 var key2="francais";
+var key2a="français";
+var key2b="Francais";
+var key2c="Français";
 
 password2=prompt('Please enter the clue to access this page!');
 
-if (password2==key2)
+if (password2.toLowerCase()==key2 ||
+    password2.toLowerCase()==key2a ||
+    password2.toLowerCase()==key2b ||
+    password2.toLowerCase()==key2c)
   alert('Clue Correct! Click OK to enter!');
 else
    {
@@ -85,8 +91,8 @@ history.back();
 </td>
 </tr>
 </table>
-<div data-role="footer" data-theme="a">
-<a href="index.html" data-transition="flip" data-role="button" data-theme="a">Home</a>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<a href="index.html" data-transition="flip" data-role="button" data-theme="a" target="_blank">Home</a>
 <a href="frenchAppCredits.html" data-transition="flip" data-role="button" data-theme="a">Credits</a>
 </div>
 </div>
